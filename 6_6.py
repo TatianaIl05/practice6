@@ -1,10 +1,9 @@
 n, k, m = map(int, input('Введите количество малышей, детей на карусели, минут: ').split())
 
-whole_time = (n//k)*2*m
+total_rides = 2 * n
+times_count = total_rides // k
 
-if n < k:
-    print(m*2)
-elif n % k == 0:
-    print(whole_time)
-else:
-    print(whole_time + (n % k)*2*m)
+if total_rides % k != 0:
+    times_count += 1
+
+print(times_count * m)
