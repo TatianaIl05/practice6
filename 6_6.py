@@ -7,4 +7,4 @@ if n < k:
 elif n % k == 0:
     print(whole_time)
 else:
-    print(whole_time + (n%k)*2*m)
+    print(whole_time + (n % k)*2*m)
